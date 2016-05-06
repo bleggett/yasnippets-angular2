@@ -8,4 +8,4 @@
 - `M-x yas-reload-all` to refresh yasnippet and load the new snippets.
 
 ## Contributing/Issues
-Feel free to fork/extend/correct/add to these snippets, they're basic and I just wanted a quick way to stamp out an ng2 Component definition in Emacs.
+Feel free to fork/extend/correct/add to these snippets, they're basic and I just wanted a quick way to stamp out an ng2 Component definition in [Spacemacs](http://spacemacs.org/).
