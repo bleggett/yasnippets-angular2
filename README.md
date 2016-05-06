@@ -1,6 +1,6 @@
 # Angular 2 yasnippets
 
-## Some basic Angular 2 yasnippets, converted from [John Papa's VSCode snippets](https://github.com/johnpapa/vscode-angular2-snippets)
+### Some basic Angular 2 yasnippets, converted from [John Papa's VSCode snippets](https://github.com/johnpapa/vscode-angular2-snippets)
 
 ## Installation:
 - Get [yasnippet](https://github.com/capitaomorte/yasnippet), either from git or via ELPA.
