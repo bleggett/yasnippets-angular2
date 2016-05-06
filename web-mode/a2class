@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Angular 2 HTML Class
+# key: a2class
+# --
+[ngClass]="{${1:cssClass}: ${0:expression}}"

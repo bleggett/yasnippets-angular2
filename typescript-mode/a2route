@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Angular 2 Routes
+# key: a2route
+# --
+@Routes([
+    { path: '/${1:path}, component: ${2:Component} }$0
+])

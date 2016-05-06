@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Angular 2 ngModel
+# key: a2mod
+# --
+[(ngModel)]="${0:binding}"

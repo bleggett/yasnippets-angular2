@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Angular 2 ngIf 
+# key: a2if
+# --
+*ngIf="${0:expression}"

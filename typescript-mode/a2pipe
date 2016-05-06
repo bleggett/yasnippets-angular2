@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: Angular 2 Pipe
+# key: a2pipe
+# --
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+    name: '${1:name}'
+})
+
+export class ${2:PipeName}Pipe implements PipeTransform {
+    transform(value: any, args: any[]): any {
+                     $0
+    }
+}

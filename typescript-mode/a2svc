@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Angular 2 Service
+# key: a2svc
+# --
+
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class ${1:ServiceName}Service {
+       constructor() { }
+$0
+}

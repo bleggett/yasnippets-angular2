@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Angular 2 ngRouterLink
+# key: a2rlnk
+# --
+[routerLink]="['${0:routeName}']"

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Angular 2 HTTP Get
+# key: a2hget
+# --
+return this.http.get('${1:url}')
+    .map((res: Response) => res.json()$0);

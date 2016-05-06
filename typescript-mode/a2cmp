@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: Angular 2 Component 
+# key: a2cmp
+# --
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  moduleId: module.id,
+  selector: '${1:my-component}',
+  templateUrl: '${2:mycomponent}.component.html'
+})
+export class ${3:MyComponent}Component implements OnInit {
+       constructor() { }
+
+       ngOnInit() { }
+       $0
+}

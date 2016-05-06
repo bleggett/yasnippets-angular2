@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Angular 2 ngSwitch 
+# key: a2swtch
+# --
+<div [ngSwitch]="${1:conditionExpression}">
+    <div *ngSwitchWhen="${2:expression}">${3:output}</div>
+    <div *ngSwitchDefault>${0:output2}</div>
+</div>
