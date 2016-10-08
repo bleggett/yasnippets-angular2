@@ -1,0 +1,55 @@
+# -*- mode: snippet -*-
+# name: Angular 2 CRUD
+# key: a2crud
+# --
+import { Injectable } from '@angular/core';
+import { Headers, Http } from '@angular/http';
+
+import 'rxjs/add/operator/toPromise';
+
+import { ${1:Class} } from './${2:path}';
+
+@Injectable()
+export class $1Service {
+  private headers = new Headers({'Content-Type': 'application/json'});
+  private url = 'http://localhost:3000/${3:uri}';
+
+  constructor(private http: Http) { }
+
+  get$1(): Promise<$1[]> {
+    return this.http.get(this.url)
+      .toPromise()
+      .then(response => response.json() as $1[])
+      .catch(this.handleError);
+  }
+
+  create(${1:$(concat (downcase (subseq yas-text 0 1)) (subseq yas-text 1))}: $1): Promise<$1> {
+    return this.http
+      .post(this.url, JSON.stringify(${1:$(concat (downcase (subseq yas-text 0 1)) (subseq yas-text 1))}), {headers: this.headers})
+      .toPromise()
+      .then(res => res.json().data)
+      .catch(this.handleError);
+  }
+
+  delete(id: number): Promise<void> {
+    let deleteUrl = \`\${this.url}/\${id}\`;
+    return this.http.delete(deleteUrl, {headers: this.headers})
+      .toPromise()
+      .then(() => null)
+      .catch(this.handleError);
+  }
+
+  update(${1:$(concat (downcase (subseq yas-text 0 1)) (subseq yas-text 1))}: $1): Promise<$1> {
+    const updateUrl = \`\${this.url}/\${${1:$(concat (downcase (subseq yas-text 0 1)) (subseq yas-text 1))}.id}\`;
+    return this.http
+      .put(updateUrl, JSON.stringify(${1:$(concat (downcase (subseq yas-text 0 1)) (subseq yas-text 1))}), {headers: this.headers})
+      .toPromise()
+      .then(() => ${1:$(concat (downcase (subseq yas-text 0 1)) (subseq yas-text 1))})
+      .catch(this.handleError);
+  }
+
+  private handleError(error: any): Promise<any> {
+    console.error('An error occurred', error);
+    return Promise.reject(error.message || error);
+  }
+}
